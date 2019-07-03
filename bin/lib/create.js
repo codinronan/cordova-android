@@ -226,9 +226,9 @@ function validateProjectName (project_name) {
     }
 
     // Classes in Java don't begin with numbers
-    if (/^[0-9]/.test(project_name)) {
-        return Q.reject(new CordovaError(msg + 'Project name must not begin with a number'));
-    }
+    //if (/^[0-9]/.test(project_name)) {
+    //    return Q.reject(new CordovaError(msg + 'Project name must not begin with a number'));
+    //}
 
     return Q.resolve();
 }
